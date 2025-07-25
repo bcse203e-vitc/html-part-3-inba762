@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Login, Password Reset, and Event Registration</title>
+</head>
+<body>
+ <h1>Online Event Registration</h1>
+ <form action="/register" method="post">
+   <label for="fullName">Full Name:</label><br>
+   <input type="text" id="fullName" name="fullName" required><br><br>
+
+   <label for="email">Email:</label><br>
+   <input type="email" id="email" name="email" placeholder="example@domain.com" required><br><br>
+
+   <label for="phone">Phone Number:</label><br>
+   <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required><br><br>
+
+   <label>Gender:</label><br>
+   <input type="radio" id="male" name="gender" value="Male" required>
+   <label for="male">Male</label>
+   <input type="radio" id="female" name="gender" value="Female">
+   <label for="female">Female</label>
+   <br><br>
+
+   <label for="age-group">Age Group:</label><br>
+   <select id="age-group" name="age-group" required>
+     <option value="">Select</option>
+     <option value="under18">Under 18</option>
+     <option value="18-25">18-25</option>
+     <option value="26-35">26-35</option>
+     <option value="36-50">36-50</option>
+     <option value="50plus">50+</option>
+   </select><br><br>
+
+   <label>Topics of Interest:</label><br>
+   <input type="checkbox" id="ai" name="topics" value="AI">
+   <label for="ai">AI</label>
+   <input type="checkbox" id="web" name="topics" value="Web Development">
+   <label for="web">Web Development</label>
+   <input type="checkbox" id="cyber" name="topics" value="Cybersecurity">
+   <label for="cyber">Cybersecurity</label><br><br>
+
+   <label for="comments">Additional Comments:</label><br>
+   <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Your comments"></textarea><br><br>
+
+   <button type="submit">Register</button>
+ </form>
+
+</body>
+</html>
